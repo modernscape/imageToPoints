@@ -1,4 +1,4 @@
-import {list} from "./list"
+import {list} from "./list.js"
 
 window.onload = function () {
   let title = ""
