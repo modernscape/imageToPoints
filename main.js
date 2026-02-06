@@ -174,9 +174,13 @@ class Particle {
 
   _setMesh() {
     const geometry = new THREE.BufferGeometry()
-    const position = new THREE.BufferAttribute(new Float32Array(this.imageList[0].position), 3)
-    const color = new THREE.BufferAttribute(new Float32Array(this.imageList[0].color), 3)
-    const alpha = new THREE.BufferAttribute(new Float32Array(this.imageList[0].alpha), 1)
+    const ind = Math.floor(Math.random() * this.imageList.length)
+    const position = new THREE.BufferAttribute(new Float32Array(this.imageList[ind].position), 3)
+    const color = new THREE.BufferAttribute(new Float32Array(this.imageList[ind].color), 3)
+    const alpha = new THREE.BufferAttribute(new Float32Array(this.imageList[ind].alpha), 1)
+    // const position = new THREE.BufferAttribute(new Float32Array(this.imageList[0].position), 3)
+    // const color = new THREE.BufferAttribute(new Float32Array(this.imageList[0].color), 3)
+    // const alpha = new THREE.BufferAttribute(new Float32Array(this.imageList[0].alpha), 1)
 
     const rand = []
     for (let i = 0; i < position.length / 3; i++) {
