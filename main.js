@@ -144,6 +144,7 @@ class Particle {
       "Red-flankedBluetail.png", //
       "kawasem.png", //
       "PasserinaCiris.png", //
+      "PharomachrusMocinno.png", //
     ]
     this.imageList = [] // [{ position, color, alpha }]
   }
