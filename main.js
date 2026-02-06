@@ -143,6 +143,7 @@ class Particle {
     this.pathList = [
       "Red-flankedBluetail.png", //
       "card_analog.png", //
+      "kawasem.png", //
     ]
     this.imageList = [] // [{ position, color, alpha }]
   }
