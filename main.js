@@ -142,8 +142,8 @@ class Particle {
     // this.pathList = ["./src/img/Red-flankedBluetail.png"]
     this.pathList = [
       "Red-flankedBluetail.png", //
-      "card_analog.png", //
       "kawasem.png", //
+      "PasserinaCiris.png", //
     ]
     this.imageList = [] // [{ position, color, alpha }]
   }
