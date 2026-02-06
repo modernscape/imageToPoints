@@ -138,10 +138,8 @@ class Particle {
   constructor(stage) {
     this.stage = stage
     this.promiseList = []
-    // this.pathList = ['../../src/img/kami_works.png'];
-    this.pathList = ["./src/img/card_analog.png"]
-    // this.pathList = ['../../src/img/paper_works.png'];
-
+    // this.pathList = ["./src/img/card_analog.png"]
+    this.pathList = ["./src/img/Red-flankedBluetail.png"]
     this.imageList = [] // [{ position, color, alpha }]
   }
 
