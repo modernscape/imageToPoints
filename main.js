@@ -140,7 +140,7 @@ class Particle {
     this.promiseList = []
     // this.pathList = ["./src/img/card_analog.png"]
     // this.pathList = ["./src/img/Red-flankedBluetail.png"]
-    this.pathList_ = [
+    this.pathList = [
       "Red-flankedBluetail.png", //
       "card_analog.png", //
     ]
