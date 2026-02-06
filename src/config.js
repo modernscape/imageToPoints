@@ -1,32 +1,32 @@
-import { list } from "../list.js";
+import {list} from "./list"
 
 window.onload = function () {
-  let title = "";
+  let title = ""
 
   for (let i = 0; i < list.length; i++) {
-    const obj = list[i];
+    const obj = list[i]
     if (location.href.includes(obj.href)) {
-      title = obj.title;
+      title = obj.title
 
-      let span = document.createElement("span");
-      span.classList.add("title");
-      span.innerHTML = title;
-      document.body.prepend(span);
+      let span = document.createElement("span")
+      span.classList.add("title")
+      span.innerHTML = title
+      document.body.prepend(span)
 
-      const pageTitle = title.replace("<br>", " ");
-      document.title = pageTitle;
+      const pageTitle = title.replace("<br>", " ")
+      document.title = pageTitle
 
-      const links = obj.links;
+      const links = obj.links
 
       if (links != undefined) {
-        const ary = links.split(",");
+        const ary = links.split(",")
         for (let i = 0; i < ary.length; i++) {
-          const link = ary[i];
-          const str = `<a href="${link}" target="_blank">${link}</a>`;
-          span.innerHTML += str;
+          const link = ary[i]
+          const str = `<a href="${link}" target="_blank">${link}</a>`
+          span.innerHTML += str
         }
       }
-      break;
+      break
     }
   }
 
@@ -38,7 +38,7 @@ window.onload = function () {
   // <a href="/pages/24-10-13_flowParticles/" target="013" onload="setText()">
   //   パスに沿って連続的に流れるパーティクル
   // </a>;
-};
+}
 
 // // 新しい<a>タグが追加された時のコールバック関数
 // function onAnchorAdded(anchorElement) {
